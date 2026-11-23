@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An offline demonstrator of Stepnov’s Method for reading orders of magnitude.">
+  <title>Mathemote</title>
+  <script src="src/locales.js"></script>
+  <script src="src/preferences.js"></script>
+  <link rel="stylesheet" href="src/demo.css">
+  <script src="src/core.js" defer></script>
+  <script src="src/channels.js" defer></script>
+  <script src="src/faces.js" defer></script>
+  <script src="src/demo.js" defer></script>
+</head>
+<body data-page="demo">
+  <header class="top">
+    <div class="wrap top-inner">
+      <span>Mathemote</span>
+      <nav id="page-nav" class="site-nav" aria-label="Pages" data-i18n-label="pages">
+        <span aria-current="page" data-i18n="navDemo">Demo</span>
+        <a data-i18n="about" data-page-link href="about.html">About</a>
+        <a data-i18n="useCase" data-page-link href="examples/space-navigation.html">Use case</a>
+      </nav>
+      <div id="preferences" class="preferences"></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <header class="intro">
+      <h1 data-i18n="headline">Magnitude in a face</h1>
+      <p data-i18n="intro"></p>
+    </header>
+
+    <div class="settings">
+      <fieldset class="standards">
+        <legend data-i18n="standard"></legend>
+        <label><input type="radio" name="standard" value="1" checked> <span data-i18n="seq"></span></label>
+        <label><input type="radio" name="standard" value="2"> <span data-i18n="sim"></span></label>
+      </fieldset>
+      <div class="playback-controls">
+        <label><input id="motion" type="checkbox"> <span data-i18n="animation"></span></label>
+        <button id="play" type="button" data-i18n="play" hidden></button>
+        <details class="playback-options">
+          <summary data-i18n="settings"></summary>
+          <label for="speed" data-i18n="rate"></label>
+          <select id="speed">
+            <option value="0.5" data-unit-value="0.5" data-suffix="×" selected>0.5×</option>
+            <option value="1" data-unit-value="1" data-suffix="×">1×</option>
+            <option value="2" data-unit-value="2" data-suffix="×">2×</option>
+          </select>
+        </details>
+      </div>
+    </div>
+
+    <div class="comparison" data-i18n-label="comparison">
+      <section class="card" id="panel-a" aria-labelledby="label-a">
+        <label id="label-a" for="input-a" data-i18n="valueA"></label>
+        <input id="input-a" type="text" value="1e8" spellcheck="false" autocomplete="off" aria-describedby="input-help">
+        <div class="stage" aria-hidden="true"></div>
+        <p class="phase" hidden></p>
+        <div class="readout"></div>
+      </section>
+      <section class="card" id="panel-b" aria-labelledby="label-b">
+        <label id="label-b" for="input-b" data-i18n="valueB"></label>
+        <input id="input-b" type="text" value="1e9" spellcheck="false" autocomplete="off" aria-describedby="input-help">
+        <div class="stage" aria-hidden="true"></div>
+        <p class="phase" hidden></p>
+        <div class="readout"></div>
+      </section>
+    </div>
+    <p class="comparison-summary" id="comparison-summary"></p>
+    <p id="number-status" class="sr-only" role="status"></p>
+    <span class="sr-only" id="input-help" data-i18n="inputHelp"></span>
+
+    <section class="scale" aria-labelledby="scale-title">
+      <div class="scale-heading">
+        <div>
+          <h2 id="scale-title" data-i18n="scale"></h2>
+          <p id="scale-help" data-i18n="scaleHelp"></p>
+        </div>
+        <span id="order-status" class="order-status"></span>
+      </div>
+      <div class="scale-window">
+        <div class="window-info"><p id="window-range"></p><span id="window-mode" class="window-mode"></span></div>
+        <div class="window-controls" role="group" data-i18n-label="navigation">
+          <button id="window-prev" type="button" data-i18n="previous"></button>
+          <button id="window-auto" type="button" data-i18n="auto"></button>
+          <button id="window-next" type="button" data-i18n="next"></button>
+        </div>
+      </div>
+      <div class="order-scale">
+        <label for="order-slider" class="sr-only" data-i18n="slider"></label>
+        <input id="order-slider" type="range" step="1" aria-describedby="scale-help" disabled>
+        <div id="order-ticks" class="order-ticks" aria-hidden="true"></div>
+        <p id="local-tick-note" class="tick-note" data-i18n="ticks" hidden></p>
+      </div>
+      <section class="face-key" aria-labelledby="face-key-title">
+        <h3 id="face-key-title" data-i18n="key"></h3>
+        <p data-i18n="keyHelp"></p>
+        <ol id="brow-key" class="brow-key" data-i18n-label="browKey"></ol>
+        <ol id="legend" class="legend" data-i18n-label="faceKey"></ol>
+      </section>
+      <details id="number-access" class="number-access"><summary data-i18n="access"></summary></details>
+      <details class="input-examples">
+        <summary data-i18n="examples"></summary>
+        <p data-i18n="exampleText"></p>
+      </details>
+    </section>
+    <noscript><p data-i18n="enable">Enable JavaScript to run this demo.</p></noscript>
+  </main>
+  <footer class="wrap footer">
+    <span data-i18n="concept">Mathemote - based on Stepnov's Method, conceived by Igor Stepnov.</span>
+    <a data-i18n="originalSpec" href="docs/STEPNOV-METHOD-ORIGINAL-SPECIFICATION.md">Original specification</a>
+  </footer>
+</body>
+</html>

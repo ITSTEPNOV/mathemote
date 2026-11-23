@@ -1,0 +1,22 @@
+Mathemote - implementation of Stepnov's Method.
+Original concept and methodology: Igor Stepnov.
+Mathemote project author: Igor Stepnov.
+
+Mathemote is the name of this software implementation and its facial notation.
+The implementation was developed with Codex assistance. See AUTHORS.md for
+individual credit and docs/PROJECT-ORIGIN.md for provenance and open questions.
+
+First public publication date: pending; enter only after an actual public release.
+
+Software: Apache License, Version 2.0. See LICENSE.
+Project documentation and original visual material: Creative Commons
+Attribution 4.0 International. See docs/LICENSING.md for the component-by-component
+scope and exclusions.
+
+Original specification: docs/STEPNOV-METHOD-ORIGINAL-SPECIFICATION.md
+Version history: CHANGELOG.md
+Citation metadata: CITATION.cff
+
+Contributors and authors of later implementations and modifications retain
+credit for their own contributions. This notice records provenance and
+attribution for the material in this distribution.

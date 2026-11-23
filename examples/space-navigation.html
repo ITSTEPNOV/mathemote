@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flight computer · Mathemote</title>
+  <script src="../src/locales.js"></script>
+  <script src="../src/preferences.js"></script>
+  <link rel="stylesheet" href="../src/demo.css">
+  <link rel="stylesheet" href="space-navigation.css">
+  <script src="../src/core.js" defer></script>
+  <script src="../src/faces.js" defer></script>
+  <script src="../src/channels.js" defer></script>
+  <script src="space-model.js" defer></script>
+  <script src="space-navigation.js" defer></script>
+</head>
+<body data-page="space">
+  <header class="top">
+    <div class="wrap top-inner">
+      <span>Mathemote</span>
+      <nav id="page-nav" class="site-nav" aria-label="Pages" data-i18n-label="pages">
+        <a data-i18n="navDemo" data-page-link href="../index.html">Demo</a>
+        <a data-i18n="about" data-page-link href="../about.html">About</a>
+        <span aria-current="page" data-i18n="useCase">Use case</span>
+      </nav>
+      <div id="preferences" class="preferences"></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <header class="intro">
+      <h1 data-i18n="space">Flight computer</h1>
+      <p data-i18n="spaceIntro"></p>
+    </header>
+    <div class="route-controls">
+      <label for="destination"><span data-i18n="destination"></span>
+        <select id="destination">
+          <option value="moon" data-i18n="moon"></option>
+          <option value="mars" data-i18n="mars"></option>
+          <option value="proxima" data-i18n="proxima"></option>
+        </select>
+      </label>
+      <label for="ship-speed"><span data-i18n="shipSpeed"></span>
+        <select id="ship-speed">
+          <option value="0" data-unit="kms" data-unit-value="1"></option>
+          <option value="1" data-unit="kms" data-unit-value="10" selected></option>
+          <option value="2" data-unit="kms" data-unit-value="100"></option>
+          <option value="3" data-unit="kms" data-unit-value="1000"></option>
+        </select>
+      </label>
+    </div>
+    <fieldset class="standards navigation-modes">
+      <legend data-i18n="faceShows"></legend>
+      <label><input type="radio" name="navigation-mode" value="magnitude" checked> <span data-i18n="magnitudeMode"></span></label>
+      <label><input type="radio" name="navigation-mode" value="mission"> <span data-i18n="missionMode"></span></label>
+    </fieldset>
+    <section class="navigation-results" id="magnitude" aria-labelledby="magnitude-title">
+      <h2 id="magnitude-title" data-i18n="magnitudeTitle"></h2>
+      <div class="metric-grid" id="absolute-metrics"></div>
+    </section>
+    <section class="navigation-results" id="mission" aria-labelledby="mission-title" hidden>
+      <h2 id="mission-title" data-i18n="missionTitle"></h2>
+      <div class="mission-layout">
+        <div class="mission-controls">
+          <p data-i18n="missionHelp"></p>
+          <div class="route-controls limit-control">
+            <label for="mission-limit"><span data-i18n="limit"></span>
+              <select id="mission-limit">
+                <option value="4" data-unit="seconds" data-unit-value="10000"></option>
+                <option value="5" data-unit="seconds" data-unit-value="100000" selected></option>
+                <option value="7" data-unit="seconds" data-unit-value="10000000"></option>
+              </select>
+            </label>
+          </div>
+          <p id="mission-times"></p>
+        </div>
+        <div id="mission-metric"></div>
+      </div>
+    </section>
+    <p class="sr-only" id="route-status" role="status"></p>
+    <details id="number-access" class="number-access"><summary data-i18n="access"></summary></details>
+    <details class="input-examples">
+      <summary data-i18n="model"></summary>
+      <p data-i18n="modelHelp"></p>
+    </details>
+    <noscript><p data-i18n="enable">Enable JavaScript to run this demo.</p></noscript>
+  </main>
+  <footer class="wrap footer">
+    <span data-i18n="concept">Mathemote - based on Stepnov's Method, conceived by Igor Stepnov.</span>
+    <a data-i18n="originalSpec" href="../docs/STEPNOV-METHOD-ORIGINAL-SPECIFICATION.md">Original specification</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Mathemote uses Stepnov’s Method to show the scale of a number.">
+  <title>About · Mathemote</title>
+  <script src="src/locales.js"></script>
+  <script src="src/preferences.js"></script>
+  <link rel="stylesheet" href="src/demo.css">
+  <link rel="stylesheet" href="src/about.css">
+  <script src="src/core.js" defer></script>
+  <script src="src/faces.js" defer></script>
+  <script src="src/about.js" defer></script>
+</head>
+<body data-page="about">
+  <header class="top">
+    <div class="wrap top-inner">
+      <span>Mathemote</span>
+      <nav id="page-nav" class="site-nav" aria-label="Pages" data-i18n-label="pages">
+        <a data-i18n="navDemo" data-page-link href="index.html">Demo</a>
+        <span aria-current="page" data-i18n="about">About</span>
+        <a data-i18n="useCase" data-page-link href="examples/space-navigation.html">Use case</a>
+      </nav>
+      <div id="preferences" class="preferences"></div>
+    </div>
+  </header>
+  <main class="wrap about">
+    <header class="intro">
+      <h1 data-i18n="about">About</h1>
+      <p data-i18n="aboutIntro">Mathemote is a free tool that uses Stepnov’s Method to show the scale of a number through facial expressions. The exact number stays visible.</p>
+    </header>
+
+    <section aria-labelledby="about-problem">
+      <h2 id="about-problem" data-i18n="aboutProblem">Why scale is hard to see</h2>
+      <p data-i18n="aboutProblemText">Computers and AI can return numbers that are far larger or smaller than the ones we use every day. Scientific notation makes these numbers shorter to write. A face adds a visual cue to the scale of the result.</p>
+    </section>
+
+    <section aria-labelledby="about-how">
+      <h2 id="about-how" data-i18n="aboutHow">How the method works</h2>
+      <p data-i18n="aboutWindow">Each window covers 15 decimal orders. One step on the scale multiplies or divides the value by ten. The mouth changes every three steps, and the brows pick one of the three positions within that group.</p>
+      <ol class="about-mouths">
+        <li data-i18n="F0">Smile</li>
+        <li data-i18n="F1">Neutral Mouth</li>
+        <li data-i18n="F3">Downturned Mouth</li>
+        <li data-i18n="F2">Pressed Lips</li>
+        <li data-i18n="F4">Bared Teeth</li>
+      </ol>
+      <p class="about-brows" id="about-brows" data-i18n="browKey">Brows within a group</p>
+      <ol class="about-brow-list" aria-labelledby="about-brows">
+        <li data-i18n="B0">Furrowed Brows</li>
+        <li data-i18n="B1">Neutral Brows</li>
+        <li data-i18n="B2">Raised Brows</li>
+      </ol>
+      <p data-i18n="aboutAuto">As you type a number in Auto window mode, the scale moves to its order and keeps the number as typed.</p>
+    </section>
+
+    <section aria-labelledby="about-examples">
+      <h2 id="about-examples" data-i18n="aboutExamples">Three examples</h2>
+      <div class="about-examples">
+        <article aria-labelledby="about-education">
+          <h3 id="about-education" data-i18n="aboutEducation">Education</h3>
+          <p data-i18n="aboutEducationText">Compare a million, a billion and a trillion. Each is a thousand times the previous one. In the initial window, the mouth moves to the next group and the brows stay the same.</p>
+          <ul class="about-values">
+            <li><span class="about-face" data-example-order="6" aria-hidden="true"></span><bdi dir="ltr">10<sup>6</sup></bdi></li>
+            <li><span class="about-face" data-example-order="9" aria-hidden="true"></span><bdi dir="ltr">10<sup>9</sup></bdi></li>
+            <li><span class="about-face" data-example-order="12" aria-hidden="true"></span><bdi dir="ltr">10<sup>12</sup></bdi></li>
+          </ul>
+        </article>
+        <article aria-labelledby="about-ai">
+          <h3 id="about-ai" data-i18n="aboutAI">Artificial intelligence</h3>
+          <p data-i18n="aboutAIText">Suppose an AI tool counts 100 million possible configurations, then counts one trillion after you change a setting. A different face can flag that jump while the exact counts remain visible.</p>
+        </article>
+        <article aria-labelledby="about-space">
+          <h3 id="about-space" data-i18n="aboutSpace">Space navigation</h3>
+          <p data-i18n="aboutSpaceText">Compare a trip to the Moon with a trip to Proxima Centauri. The face adds a cue to interstellar distance and travel time. The flight demo still calculates time from distance and speed.</p>
+          <a data-i18n="useCase" data-page-link href="examples/space-navigation.html">Use case</a>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="about-audience">
+      <h2 id="about-audience" data-i18n="aboutAudience">Who might use it?</h2>
+      <p data-i18n="aboutAudienceText">Mathemote is designed for people without specialist maths training. It can be explored in education, AI, scientific computing, programming, engineering, data visualisation and interfaces that offer several ways to read the same result. How easily people learn and read the expressions is still to be tested.</p>
+    </section>
+
+    <section aria-labelledby="about-access">
+      <h2 id="about-access" data-i18n="aboutAccess">Ways to read the result</h2>
+      <p data-i18n="aboutStandards">The Sequential standard shows the mouth first and the brows second. The Simultaneous standard shows both together.</p>
+      <p data-i18n="aboutAccessText">The demo also supplies selectable text and can read it aloud with a compatible local voice. These channels describe the same number and expression.</p>
+    </section>
+
+    <section aria-labelledby="about-credit">
+      <h2 id="about-credit" data-i18n="aboutCredit">Authorship</h2>
+      <p data-i18n="aboutMethodCredit">Igor Stepnov created the original concept and methodology of Stepnov’s Method.</p>
+      <p data-i18n="aboutProjectCredit">Mathemote is a free, open implementation of Stepnov’s Method.</p>
+      <p class="about-links">
+        <a data-i18n="originalSpec" href="docs/STEPNOV-METHOD-ORIGINAL-SPECIFICATION.md">Original specification</a>
+        <a data-i18n="demo" data-page-link href="index.html">Main demonstrator</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

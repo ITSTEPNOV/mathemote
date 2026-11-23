@@ -1,0 +1,20 @@
+.about { padding-block-end: 2rem; }
+.about > section { border-block-start: 1px solid var(--rule); padding-block-start: 1rem; margin-block-start: 1.25rem; }
+.about > section > p { max-inline-size: 70ch; }
+.about section p { margin-block-start: .55rem; }
+.about a { color: inherit; text-underline-offset: .2em; }
+.about-mouths { display: flex; flex-wrap: wrap; column-gap: 2.25rem; row-gap: .25rem; padding-inline-start: 1.4rem; }
+.about-brows { font-weight: 650; }
+.about-brow-list { margin-block-start: .25rem; padding-inline-start: 1.4rem; }
+.about-examples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-block-start: .75rem; }
+.about-examples article { padding: .9rem; border: 1px solid var(--rule); border-radius: .65rem; background: var(--surface); }
+.about-examples h3 { margin: 0; font-size: 1.05rem; }
+.about-examples a { display: inline-block; margin-block-start: .55rem; }
+.about-values { display: flex; justify-content: space-around; gap: .4rem; list-style: none; margin-block: .75rem 0; padding: 0; }
+.about-values li { min-inline-size: 0; text-align: center; }
+.about-face { display: block; inline-size: 3rem; max-inline-size: 100%; margin-inline: auto; }
+.about-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+
+@media (max-width: 53rem) {
+  .about-examples { grid-template-columns: 1fr; }
+}

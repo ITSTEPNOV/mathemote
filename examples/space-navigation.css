@@ -1,0 +1,20 @@
+.route-controls { display: flex; flex-wrap: wrap; gap: .6rem 1rem; }
+.route-controls label { display: flex; flex-direction: column; gap: .25rem; font-size: .875rem; font-weight: 650; }
+.route-controls select { font-weight: 400; max-width: 100%; }
+.navigation-modes { margin-top: 1rem; }
+.navigation-results { margin-top: 1.25rem; }
+.metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; margin-top: .75rem; }
+.metric h3 { font-size: 1rem; margin: 0 0 .25rem; }
+.metric-value { font-size: 1.2rem; font-weight: 650; overflow-wrap: anywhere; }
+.metric-window { color: var(--muted); font-size: .875rem; }
+.metric .stage { min-height: 9rem; }
+.metric .picture { width: clamp(6rem, 15vw, 8rem); }
+.limit-control { margin: .75rem 0; }
+.mission-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: .75rem; }
+.mission-controls { color: var(--muted); }
+.mission-controls strong { color: var(--ink); }
+@media (max-width: 42rem) {
+  .metric-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: .55rem; }
+  .mission-layout { grid-template-columns: 1fr; gap: .65rem; }
+  .metric .stage { min-height: 7rem; }
+}

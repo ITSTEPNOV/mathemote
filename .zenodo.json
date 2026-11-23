@@ -1,0 +1,9 @@
+{
+  "title": "Mathemote - implementation of Stepnov's Method",
+  "description": "A dependency-free library and local web demonstrator for encoding decimal orders through monochrome facial expressions. Original concept and methodology: Igor Stepnov. The license field describes the software. In a mixed source archive, documentation and original visual material have a separate CC BY 4.0 scope described in NOTICE and docs/LICENSING.md.",
+  "upload_type": "software",
+  "creators": [{ "name": "Stepnov, Igor" }],
+  "version": "1.0.0",
+  "license": "apache-2.0",
+  "keywords": ["order of magnitude", "data visualization", "facial expressions"]
+}

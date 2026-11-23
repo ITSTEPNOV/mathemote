@@ -1,0 +1,10 @@
+{
+  "name": "mathemote",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mathemote, an implementation of Stepnov's Method. Original concept and methodology by Igor Stepnov.",
+  "license": "Apache-2.0",
+  "main": "src/core.js",
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=22" }
+}

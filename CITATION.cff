@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Cite Igor Stepnov's Mathemote release for the software and the original specification for the method."
+title: "Mathemote - implementation of Stepnov's Method"
+type: software
+authors:
+  - given-names: Igor
+    family-names: Stepnov
+version: 1.0.0
+license: Apache-2.0
+abstract: "An open implementation of Stepnov's Method. Original concept and methodology by Igor Stepnov. Documentation and original visual material have separate licensing as described in NOTICE."
+preferred-citation:
+  type: report
+  title: "Stepnov's Method - Original Specification"
+  authors:
+    - given-names: Igor
+      family-names: Stepnov
+  license: CC-BY-4.0
+keywords:
+  - order of magnitude
+  - data visualization
+  - facial expressions
