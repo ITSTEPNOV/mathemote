@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 · pending author acceptance
+## 1.0.0 · 2026-11-23
 
 - Exact decimal classification, signed orders and bounded symbolic power handling.
 - A monochrome visual scale of five mouths and three eyebrow positions, plus a dedicated zero expression.

@@ -1,6 +1,6 @@
 # Release preparation
 
-Mathemote 1.0.0 is prepared locally for author acceptance. Original concept and methodology: Igor Stepnov. The software license is Apache 2.0 and the original documentation and artwork scope is CC BY 4.0. Verify the attribution and rights questions before issuing a public release. [Licensing](LICENSING.md) · [Provenance and author checklist](PROJECT-ORIGIN.md).
+Mathemote 1.0.0 was published on 2026-11-23 after author approval. Original concept and methodology: Igor Stepnov. The software license is Apache 2.0 and the original documentation and artwork scope is CC BY 4.0. [Release](https://github.com/ITSTEPNOV/mathemote/releases/tag/v1.0.0) · [Live demo](https://itstepnov.github.io/mathemote/) · [Licensing](LICENSING.md) · [Provenance](PROJECT-ORIGIN.md).
 
 ## Reproduce the runnable release
 
@@ -104,4 +104,4 @@ After approval, archive the exact [original specification](STEPNOV-METHOD-ORIGIN
 - For the **method**, cite Igor Stepnov, *Stepnov's Method - Original Specification*. Add its verified publication date and version DOI once available.
 - For the **software**, cite Igor Stepnov, *Mathemote - implementation of Stepnov's Method*, version 1.0.0. Add the software version DOI when available.
 
-Maintain [CITATION.cff](../CITATION.cff) using the actual records. The top-level metadata describes the software, and the preferred citation points to the specification. For a later version, create a new version of the corresponding Zenodo record and use that version’s DOI when citing it. The current files omit publication dates, repository URLs and DOI fields pending real release information. [CFF schema guide](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md) · [Zenodo versioning](https://help.zenodo.org/docs/deposit/manage-versions/).
+Maintain `CITATION.cff` using the actual records. The top-level metadata describes the software, and the preferred citation points to the specification. The current files record the GitHub release and omit DOI fields pending archival. For a later Zenodo release, create a new version of the corresponding record and cite that version’s DOI. [CITATION.cff](../CITATION.cff) · [CFF schema guide](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md) · [Zenodo versioning](https://help.zenodo.org/docs/deposit/manage-versions/).

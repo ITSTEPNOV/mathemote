@@ -8,7 +8,7 @@ Igor Stepnov confirmed he is also the author of the Mathemote project. The softw
 
 The available task record documents how the method and implementation were refined. It starts with three decimal orders per mouth expression and three brow positions, with separate sequential and simultaneous standards. The implementation then gained a logarithmic slider, a movable window, text and optional local speech. The project record also contains the author-approved Russian and English expression names and the request to prepare open distribution. [Original specification](STEPNOV-METHOD-ORIGINAL-SPECIFICATION.md) · [Version history](../CHANGELOG.md).
 
-The workspace record supports credit for the initial concept and its rules. No creation date or first public release date has been established in the reviewed material. The local snapshot has no Git history available to the audit. A future repository tag and archived version would fix the contents and publication history of that release.
+The workspace record supports credit for the initial concept and its rules. The creation date remains unrecorded. The first public Mathemote release was published on 2026-11-23, with its contents identified by the release tag and ZIP archive. [Mathemote 1.0.0](https://github.com/ITSTEPNOV/mathemote/releases/tag/v1.0.0).
 
 ## Provenance review
 

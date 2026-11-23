@@ -6,7 +6,8 @@ Mathemote is the name of this software implementation and its facial notation.
 The implementation was developed with Codex assistance. See AUTHORS.md for
 individual credit and docs/PROJECT-ORIGIN.md for provenance and open questions.
 
-First public publication date: pending; enter only after an actual public release.
+First public publication date: 2026-11-23.
+Release: https://github.com/ITSTEPNOV/mathemote/releases/tag/v1.0.0
 
 Software: Apache License, Version 2.0. See LICENSE.
 Project documentation and original visual material: Creative Commons

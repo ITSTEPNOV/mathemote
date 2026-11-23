@@ -3,6 +3,8 @@
 **An implementation of Stepnov's Method · v1.0.0**  
 Original concept and methodology: Igor Stepnov.
 
+[Open the live demo](https://itstepnov.github.io/mathemote/) · [Download Mathemote 1.0.0](https://github.com/ITSTEPNOV/mathemote/releases/tag/v1.0.0)
+
 Stepnov's Method is a way of representing numeric magnitude through facial expressions. Mathemote is its software implementation and facial notation. The mouth encodes a group of three decimal orders, and the eyebrows identify one of those orders. The original notation stays visible. The design is a hypothesis about readability and is awaiting volunteer evaluation.
 
 ![The main demonstrator in English and the light theme](docs/screenshots/polish-light.png)

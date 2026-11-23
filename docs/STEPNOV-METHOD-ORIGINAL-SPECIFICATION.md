@@ -2,7 +2,8 @@
 
 **Original concept and methodology:** Igor Stepnov  
 **Reference implementation and notation:** Mathemote  
-**Status:** Consolidated from the available author instructions and approvals, prepared for author acceptance.  
+**Status:** Consolidated from the author’s instructions and approvals. Published with Mathemote 1.0.0.
+
 **Document license:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See the [licensing scope](LICENSING.md).
 
 ## 1. Purpose and origin

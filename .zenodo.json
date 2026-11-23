@@ -4,6 +4,7 @@
   "upload_type": "software",
   "creators": [{ "name": "Stepnov, Igor" }],
   "version": "1.0.0",
+  "publication_date": "2026-11-23",
   "license": "apache-2.0",
   "keywords": ["order of magnitude", "data visualization", "facial expressions"]
 }
