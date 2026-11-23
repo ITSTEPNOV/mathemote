@@ -7,17 +7,19 @@ authors:
     family-names: Stepnov
 version: 1.0.0
 date-released: 2026-11-23
+doi: 10.5281/zenodo.24472714
 repository-code: https://github.com/ITSTEPNOV/mathemote
 url: https://itstepnov.github.io/mathemote/
 license: Apache-2.0
 abstract: "An open implementation of Stepnov's Method. Original concept and methodology by Igor Stepnov. Documentation and original visual material have separate licensing as described in NOTICE."
 preferred-citation:
   type: report
-  title: "Stepnov's Method - Original Specification"
+  title: "Stepnov's Method: Human-Readable Numerical Magnitude Representation — Original Specification v1.0"
   authors:
     - given-names: Igor
       family-names: Stepnov
   license: CC-BY-4.0
+  doi: 10.5281/zenodo.24473145
 keywords:
   - order of magnitude
   - data visualization
